@@ -1,21 +1,21 @@
 body{
     font-family: 'Nunito Sans', sans-serif !important;
 }
+
+ /* nav */
 .naviagtion-bar{
-    position: sticky;
-    top: 0;
+    background-color: #f4f6f8;
 }
 
-nav a{
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
-    line-height: 48px;
-    font-size: 16px;
-    cursor: pointer;
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+    font-weight: 600;
+    line-height: 40px;
 }
-
-nav a:hover{
-    opacity: 0.5;
-    color: black;
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.55);
+    FONT-WEIGHT: 700;
+}
+.nav-link .navbar-nav .nav-link a{
+    transition: 0.5s ease;
 }

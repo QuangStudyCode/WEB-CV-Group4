@@ -6,74 +6,40 @@ body{
     --color-bg-gray:#f4f6f8;
 }
 
-body h3{
-    font-weight: 600;
-}
-/* css for about */
-.header{
-    background-color: var(--color-bg-gray);
-}
 
-.header p{
-    color: rgba(0,0,0,.55);
-    font-size: 20px;
-    line-height: 30px;
-}
 
-.header h1{
-    font-size: 40px;
-    font-weight: 700;
+/* css for title */
+.title{
+    margin-top: 80px;
+    margin-bottom: 40px;
     position: relative;
+    text-align: center;
 }
 
-.header h1::after{
-    content: '';
-    height: 100px;
-    background-image: url(/assets/img/marker.svg);
-    width: 150px;
-    background-repeat: no-repeat;
+.title h3:hover {
+    background-color: #07cb79;
+    color: white;
+    transition: all .2s ease;
+}
+
+.title h3{
+    border: 2px solid #07cb79;
+    background: #fff none repeat scroll 0 0;
+    color: #363636;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0;
+    padding: 0 30px;
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.title::before{
+    border-top: 1px solid #b7b7b7;
+    content: "";
+    left: 0;
     position: absolute;
-    right: 9px;
-    bottom: -100px;
-}
-
-.header-icons i{
-    margin-right: 8px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.header-icons i:hover{
-    opacity: 0.5;
-    font-size: 25px;
-}
-
-/* css for btn */
-
-.header button{
-    background-color: #f6e05e;
-    width: 180px;
-    height: 48px;
-    color: black;
-    font-size: 17px;
-    font-weight: 700;
-    transition: .4s;
-}
-
-.header button:hover{
-    transform: translateY(-24px);
-}
-
-
-/* css for Img */
-.img-fuild{
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    margin-left: 11%;
-    cursor: pointer;
-}
-
-.col-lg-6 img:hover{
-    opacity: .8;
+    right: 0;
+    top: 50%;
 }
