@@ -31,5 +31,8 @@ input.contact-message {
 
 /* css for contact right */
 .contact-col-right i{
-    font-size: 20px;
+    font-size: 25px;
+    margin: 10px;
+
 }
+

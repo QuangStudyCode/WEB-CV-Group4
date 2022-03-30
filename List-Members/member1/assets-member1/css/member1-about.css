@@ -5,3 +5,10 @@
 #about h6{
     font-weight: 550;
 }
+.img-fuild{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 11%;
+    cursor: pointer;
+}
