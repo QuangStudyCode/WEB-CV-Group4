@@ -4,13 +4,12 @@ body{
 :root{
     /* declare variable background-color gray */
     --color-bg-gray:#f4f6f8;
-}
 
+}
 
 html{
     scroll-behavior: smooth;
 }
-
 
 /* css for title */
 .title{

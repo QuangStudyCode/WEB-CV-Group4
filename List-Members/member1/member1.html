@@ -12,12 +12,12 @@
    <link rel="stylesheet" href="/List-Members/member1/assets-member1/css/member1.css">
    <!-- css member1-about -->
     <link rel="stylesheet" href="/List-Members/member1/assets-member1/css/member1-about.css">
-    <!-- link css member1 skills -->
-    <link rel="stylesheet" href="/List-Members/member1/assets-member1/css/member1-skills.css">
     <!-- link css member contact -->
     <link rel="stylesheet" href="/List-Members/member1/assets-member1/css/member1-contact.css">
     <!-- link css header -->
     <link rel="stylesheet" href="/List-Members/member1/assets-member1/css/member1-header.css">
+    <!-- link backtop -->
+    <link rel="stylesheet" href="/List-Members/member1/assets-member1/css/member1-backtop.css">
 
 
     <!-- link bootstrap 5 -->
@@ -38,7 +38,7 @@
 <body>
     <!-- begin navigation -->
     <nav class="naviagtion-bar p-0 fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <nav class="navbar navbar-expand-lg  navbar-light shadow">
             <div class="container">
               <a class="navbar-brand" href="/index.html">Trang Chủ</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -67,14 +67,14 @@
     <!-- end navigation -->
 
     <!-- begin page-content -->
-    <div class="page-content" style="margin-top: 67px;">
+    <div class="page-content" id="top" style="margin-top: 67px;">
 
         <!-- begin header -->
         <div class="header">
             <div class="container">
                 <div class="row py-5">
                     <div class="col-lg-6">
-                        <img  class="img-fluid shadow" src="/assets/img/img-NBQ.jpg" alt="imgAbout">
+                        <img  class="img-fluid shadow" style="border-style: solid; border-color: none; border-width: 2px;" src="/assets/img/img-NBQ.jpg" alt="imgAbout">
                     </div>
                     <div class="col-lg-6 pt-5">
                         <p>Xin Chào!</p>
@@ -193,28 +193,28 @@
                     <p class="text-center">Trong quá trình học tôi đã học và phát triển được một số kỹ năng</p>
                     <div class="col-lg-6  mt-3">
                         <span>HTML 5</span> 
-                        <div class="progress">
+                        <div class="progress" style="height: 20px !important;">
                             <div class="progress-bar" style="width:65%;background-color: #ff6600;">65%</div>
                           </div>
                     </div>
 
                     <div class="col-lg-6  mt-3">
                         <span>CSS</span> 
-                        <div class="progress">
+                        <div class="progress" style="height: 20px !important;">
                             <div class="progress-bar" style="width:50%;background-color: #63AD68;">50%</div>
                         </div>
                     </div>
 
                     <div class="col-lg-6 mt-3">
                         <span>Boostrap 5</span> 
-                        <div class="progress">
+                        <div class="progress" style="height: 20px !important;">
                             <div class="progress-bar" style="width:50%;background-color: #23C6EC;">50%</div>
                         </div>
                     </div>
 
                     <div class="col-lg-6 mt-3">
                         <span>JavaSCript</span> 
-                        <div class="progress">
+                        <div class="progress" style="height: 20px !important;">
                             <div class="progress-bar" style="width:40%;background-color: #1ae03b;">40%</div>
                         </div>
                     </div>
@@ -225,8 +225,8 @@
                             <div>
                                 Kỹ năng Cơ Bản Về Công Nghệ Thông Tin
                                  <i style="font-size: 21px;" class="fa-solid fa-computer"></i>
-                                 <div class="progress">
-                                    <div class="progress-bar" style="width:40%;background-color: #5476A9;">40%</div>
+                                 <div class="progress" style="height: 20px !important">
+                                    <div class="progress-bar" style="width:40%;background-color: #5476A9; ">40%</div>
                                 </div>
                             </div>
                         </div>
@@ -234,7 +234,7 @@
                             <div class="div">
                                 Kỹ năng Sửa Sự Cố Máy Tính Cơ bản
                                 <i style="font-size: 21px;"class="fa-solid fa-screwdriver-wrench"></i>
-                                <div class="progress">
+                                <div class="progress" style="height: 20px !important">
                                     <div class="progress-bar" style="width:50%;background-color: #5476A9;">50%</div>
                                 </div>
                             </div>
@@ -290,60 +290,59 @@
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" class="map mb-5"></iframe>
                      <!-- col left -->
-                    <div class="col-lg-6 rounded-3 py-5" style="background-color: var( --color-bg-gray);">
+                    <div class="col-lg-6 rounded-3 shadow py-5" style="background-color: var( --color-bg-gray);">
                         <!-- 1 -->
-                        <div>
-                            <label for="name">
-                                Name:
-                                <input type="text" >
-                            </label>
-                        </div>
-                    
-                        <!-- 2 -->
-                        <div>
-                            <label for="name" class="mt-4">
-                                Email:
-                                <input type="email">
-                            </label>
-                        </div>
-
-                        <!--  -->
-                        <div>
-                            <label for="name" class="mt-4">
-                                Message:
-                                <input type="text" class="contact-message" >
-                            </label>
-                        </div>
-                        <button type="button" class="btn-contact mt-5 px-3 rounded-pill"> Gửi</button>
+                        <form id="Myform">
+                            <div class="input-box">
+                                <label for="name">
+                                    Name: <i id="errorName" style="font-weight: 500;">(*)</i>
+                                </label>
+                                <input type="text" id="name" class="contact-input" onblur="CheckOnblurName()">
+                            </div>
+                                
+                            <!-- 2 -->
+                            <div class="input-box1">
+                                <label for="email" class="mt-4">
+                                     Email:<i id="errorEmail" style="font-weight: 500;">(*)</i>
+                                </label>
+                                <input type="text" id="email" class="contact-input " onblur="CheckOnblurEmail()">
+                            </div>
+                                
+                            <!--  -->
+                            <div class="mt-5">
+                                <label for="name">
+                                Message:<i id="errorMess">(*)</i>
+                                </label>
+                                 <input type="text" id="mess" class="contact-message contact-input" onblur="CheckOnblurMess()">
+                            </div>
+                            <button type="reset" id="buttonForm" onclick="Reload()" class="btn-contact mt-5 px-3 rounded-pill"> Gửi</button>
+                               
+                        </form>
                     </div>
-
                     <!-- col right -->
                     <div class="col-lg-6 mt-5 contact-col-right">
                         <h3 class="text-center ">Liên Lạc</h3>
                         <a style="margin-left:100px">Hãy liên hệ với tôi nếu bạn có bất cứ vấn đề nào!</a>
+
                         <div class="ms-5  mt-2">
-                            <span><i class="fa-solid fa-phone"></i> <a> +886113989</a></span>
+                            <i class="fa-solid fa-phone"></i> <a>+886113989</a>
                         </div>
-                      <div  class="ms-5  mt-2">
-                            <span><i class="fa-solid fa-envelope"></i> <a > baquang0411@gmail.com</a></span>
-                      </div>
-                      
-                      <div  class="ms-5  mt-2">
-                          <span><i class="fa-brands fa-github"></i><a> QuangStudyCode</a></span>
-                      </div>
-                      
-                      <div  class="ms-5 mt-2">
-                        <span><i class="fa-brands fa-facebook"></i><a> quang.ba.3133</a></span>
-                      </div>
-                    
-                      <div class="ms-5 mt-2">
-                        <span>
-                          
-                                <i class="fa-brands fa-instagram"></i>
-                            
+                        <div  class="ms-5  mt-2">
+                            <i class="fa-solid fa-envelope"></i> <a > baquang0411@gmail.com</a>
+                        </div>
+                        
+                        <div  class="ms-5  mt-2">
+                          <i class="fa-brands fa-github"></i><a> QuangStudyCode</a>
+                        </div>
+                        
+                        <div  class="ms-5 mt-2">
+                            <i class="fa-brands fa-facebook"></i><a> quang.ba.3133</a>
+                        </div>
+                        
+                        <div class="ms-5 mt-2">
+                            <i class="fa-brands fa-instagram"></i>
                             <a> quangzz.z</a>
-                        </span>
-                      </div>
+                        </div>
                       
                     </div>
                 </div>
@@ -356,7 +355,7 @@
     <!-- end page content -->
 
     <!-- begin footer -->
-    <div class="footer d-grid justify-content-center align-items-center">
+    <div class="footer d-grid justify-content-center align-items-center shadow">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -364,9 +363,10 @@
                     <h6 class="text-center">Trang chủ</h6>
 
                     <ul class="nav">
-                        <li class="nav-item"><a href="https://www.facebook.com/quang.ba.3133"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li class="nav-item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li class="nav-item"><a href="https://github.com/QuangStudyCode"><i class="fa-brands fa-github"></i></a></li>
+                        <li class="nav-item"><a href="https://www.facebook.com/quang.ba.3133"><i class="fa-brands fa-facebook" style="color: #23C6EC;"></i></a></li>
+                        <li class="nav-item"><a href="#"><i class="fa-brands fa-instagram " id="insagram"></i></a></li>
+                        <li class="nav-item"><a href="https://github.com/QuangStudyCode" id="github"><i class="fa-brands fa-github"></i></a></li>
+                        <li class="nav-item"><a href="#"><i class="fa-brands fa-google-plus-g" id="google"></i></a></li>
                     </ul>
                     <h6 class="text-center mt-5"> <i class="fa-solid fa-user-group"></i> Design By-Group4</h6>
                 </div>
@@ -377,9 +377,19 @@
     <!-- end footer -->
 
 
+    <!-- begin back to top -->
+    <div class="backTop shadow" style="position:fixed">
+        <a href="#top"><i class="fa-solid fa-circle-arrow-up "></i></a>
+    </div>
+        <!-- end back to top -->
+
+    <!-- link jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
     <!-- link js -->
+    <script src="/List-Members/member1/assets-member1/js/validate-form.js"></script>
+   <script src="/List-Members/member1/assets-member1/js/scroll.js"></script>
 
     <!-- link boostrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

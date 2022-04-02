@@ -1,0 +1,36 @@
+.backTop {
+    width: 45px;
+    height: 45px;
+    background-color: #ffd400;
+    bottom: 16%;
+    right: 12%;
+    cursor: pointer;
+    border-radius: 50%;
+
+    /* name animation */
+    animation: bouncing;
+    /* time delay */
+    animation-duration: 1.2s;
+    /* style animation */
+    animation-timing-function: ease-in-out;
+    /* count */
+    animation-iteration-count:infinite;
+}
+
+.backTop i {
+    font-size: 25px;
+    color: white;
+    line-height: 44px;
+    margin-left: 10px;
+}
+
+@keyframes bouncing{
+    /* start 0% */
+    0%{ 
+        bottom: 16%;
+    }
+    100%{
+        bottom: 20%;
+    }
+}
+

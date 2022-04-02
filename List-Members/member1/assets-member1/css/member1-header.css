@@ -29,15 +29,21 @@
     bottom: -100px;
 }
 
-.header-icons i{
+.header-icons i {
     margin-right: 8px;
-    font-size: 20px;
+    font-size: 31px;
     cursor: pointer;
     transition: 0.3s;
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(#A8DEE0,#F9E2AE);
+    text-align: center;
+    border-radius: 4px;
+    line-height: 41px;
 }
 .header-icons i:hover{
     opacity: 0.5;
-    font-size: 25px;
+    color: #fff;
 }
 
 /* css for btn */
@@ -58,11 +64,12 @@
 
 
 /* css for Img */
-.col-lg-6 img:hover{
-    opacity: .8;
-}
-
 img.img-fluid.shadow {
     border-radius: 10px;
     cursor: pointer;
+}
+
+.img-fluid:hover{
+    border-color: #fff1eb;
+    opacity: 0.9;
 }
