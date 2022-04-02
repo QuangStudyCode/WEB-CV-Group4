@@ -19,3 +19,10 @@ body{
 .nav-link .navbar-nav .nav-link a{
     transition: 0.5s ease;
 }
+
+a.nav-link{
+    border-bottom: 2px solid #f4f6f8;
+}
+a.nav-link:hover{
+    border-bottom: 2px solid #f6e05e;
+}

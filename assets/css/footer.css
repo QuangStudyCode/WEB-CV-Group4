@@ -23,10 +23,23 @@
 
 .footer .nav i{
     font-size: 27px;
-    color: #e7ce3d;
     transition: all .2s linear;
 }
 
-.footer .nav i:hover{
-    font-size: 35px;
+/* css for logo instagram */
+i.fa-brands.fa-instagram {
+    background:linear(#FA897B,#CCABD8) !important;
 }
+
+.nav .nav-item #insagram{
+    color: #F2A490;
+}
+
+.nav .nav-item #google{
+    color: #eb371f;
+}
+
+.nav .nav-item #github{
+    color: #111010;
+}
+
