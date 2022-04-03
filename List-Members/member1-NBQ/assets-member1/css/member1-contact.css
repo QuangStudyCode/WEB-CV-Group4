@@ -1,10 +1,19 @@
 .contact-input{
-    padding-right: 50%;
+    padding-right: 58%;
     height: 35px;
-    border-radius: 10px;
-    border: 2px solid #e9ecef;
-    display: block;
+    border-radius: 5px;
+    outline: none;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border: 0;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: inherit;
+    font-weight: 500;
+    transition: 0.3s ease;
 }
+
+/* css for box-message */
+
 input.contact-message {
     height: 143px;
     border-radius: 10px;
@@ -16,7 +25,7 @@ input.contact-message {
     border-radius: 10px;
 }
 
-/* css for message */
+/* css for btn contact */
 .btn-contact{
     background-color: #f6e05e;
     font-size: 24px;
@@ -72,27 +81,27 @@ input.contact-message {
 
 
 /* CSS For box name */
-.valid .input-box::before{
+.validName .input-box::before{
     content: '';
     position: absolute;
     top: 32px;
-    right: 80px;
+    right: 13px;
     width: 18px;
     height: 18px;
-    background: url(/List-Members/member1/assets-member1/img/valid.png);
+    background: url(/List-Members/member1-NBQ/assets-member1/img/valid.png);
     background-size: cover;
     z-index: 1;
 }
 
-.invalid .input-box::before{
+.invalidName .input-box::before{
     content: '';
     position: absolute;
     top: 32px;
     /* left: 0px; */
-    right: 80px;
+    right: 13px;
     width: 18px;
     height: 18px;
-    background: url(/List-Members/member1/assets-member1/img/invalid.png);
+    background: url(/List-Members/member1-NBQ/assets-member1/img/invalid.png);
     background-size: cover;
     z-index: 1;
 }
@@ -101,11 +110,11 @@ input.contact-message {
 .validMail .input-box1::before{
     content: '';
     position: absolute;
-    right: 79px;
+    right: 13px;
     top:57px;
     width: 18px;
     height: 18px;
-    background: url(/List-Members/member1/assets-member1/img/valid.png);
+    background: url(/List-Members/member1-NBQ/assets-member1/img/valid.png);
     background-size: cover;
     z-index: 1;
 }
@@ -113,11 +122,11 @@ input.contact-message {
 .invalidMail .input-box1::before{
     content: '';
     position: absolute;
-    right: 79px;
+    right: 13px;
     top: 57px;
     width: 18px;
     height: 18px;
-    background: url(/List-Members/member1/assets-member1/img/invalid.png);
+    background: url(/List-Members/member1-NBQ/assets-member1/img/invalid.png);
     background-size: cover;
     z-index: 1;
 }
