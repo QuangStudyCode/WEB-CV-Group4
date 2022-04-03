@@ -8,18 +8,18 @@ function CheckOnblurName(){
     if(Name==''||Name==null){
         errorName.innerHTML="Tên không được để trống!!!";
         errorName.style.color='red';
-        form.classList.remove("valid");
-        form.classList.add("invalid");
+        form.classList.remove("validName");
+        form.classList.add("invalidName");
     }else if(!checkName.test(Name)){
         errorName.innerHTML="Tên không hợp lệ!!!";
         errorName.style.color='red';
-        form.classList.remove("valid");
-        form.classList.add("invalid");
+        form.classList.remove("validName");
+        form.classList.add("invalidName");
     }else{
         errorName.innerHTML="Tên hợp lệ.";
         errorName.style.color='green';
-        form.classList.add("valid");
-        form.classList.remove("invalid");
+        form.classList.add("validName");
+        form.classList.remove("invalidName");
     }
 }
 

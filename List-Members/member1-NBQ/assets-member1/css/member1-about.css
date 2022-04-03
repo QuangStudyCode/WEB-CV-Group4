@@ -1,0 +1,43 @@
+/* #about h3{
+    font-weight: 600;
+} */
+
+#about h6{
+    font-weight: 550;
+}
+
+
+.colRight-about .img-fuild{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 26%;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    border: 3px solid #3a3973;
+}
+
+.colRight-about .img-fuild:hover{
+    opacity: .8;
+    transform: scale(1.1);
+}
+
+
+/* css for dowload cv */
+.about-dowload a{
+    border: 3px solid #3a3973;
+    color: #3a3973;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    transition: all .4s ease-in-out;
+}
+.about-dowload i{
+    font-size: 20px;
+}
+.about-dowload a:hover{
+    color: white;
+    background-color: #3a3973;
+}

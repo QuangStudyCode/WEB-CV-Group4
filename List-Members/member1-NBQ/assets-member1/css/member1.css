@@ -4,6 +4,7 @@ body{
 :root{
     /* declare variable background-color gray */
     --color-bg-gray:#f4f6f8;
+    --color-main:#3a3973;
 
 }
 
@@ -20,15 +21,14 @@ html{
 }
 
 .title h3:hover {
-    background-color: #07cb79;
+    background-color: var(--color-main);
     color: white;
-    transition: all .2s ease;
 }
 
 .title h3{
-    border: 2px solid #07cb79;
+    border: 2px solid ;
     background: #fff none repeat scroll 0 0;
-    color: #363636;
+    color: var(--color-main);
     display: inline-block;
     font-weight: 600;
     line-height: 40px;
@@ -37,6 +37,7 @@ html{
     position: relative;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all .5s ease;
 }
 .title::before{
     border-top: 1px solid #b7b7b7;
@@ -46,3 +47,10 @@ html{
     right: 0;
     top: 50%;
 }
+
+
+/* css img all */
+.img-fluid{
+    transition: all .4s ease-in-out;
+}
+

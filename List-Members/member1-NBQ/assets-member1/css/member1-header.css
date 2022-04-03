@@ -1,13 +1,12 @@
 
 /* css for header */
 .header{
-    /* background-color: var(--color-bg-gray); */
-    background: linear-gradient(#fff1eb ,#ace0f9);
-    /* background: linear-gradient(#accbee → #e7f0fd); */
+    background: #3a3973;
+    padding-top: 67px;
 }
 
 .header p{
-    color: rgba(0,0,0,.55);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 20px;
     line-height: 30px;
 }
@@ -16,6 +15,7 @@
     font-size: 40px;
     font-weight: 700;
     position: relative;
+    color: white;
 }
 
 .header h1::after{
@@ -36,7 +36,6 @@
     transition: 0.3s;
     width: 42px;
     height: 42px;
-    background: linear-gradient(#A8DEE0,#F9E2AE);
     text-align: center;
     border-radius: 4px;
     line-height: 41px;
@@ -66,10 +65,36 @@
 /* css for Img */
 img.img-fluid.shadow {
     border-radius: 10px;
+    border: 1px solid white;
     cursor: pointer;
+    transition: all 0.4s ease-in-out;
 }
 
 .img-fluid:hover{
     border-color: #fff1eb;
-    opacity: 0.9;
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+
+
+.header-colLeft{
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.header-colLeft-text{
+    opacity: 0;
+    font-size: 30px;
+    font-weight: 600;
+    color: #eef3f5;
+    position: absolute;
+    bottom: 0%;
+    left: 37%;
+    transition: all .3s ease-in-out;
+}
+
+.header-colLeft:hover .header-colLeft-text{
+    bottom:50%;
+    opacity: 1;
 }

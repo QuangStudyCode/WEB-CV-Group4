@@ -4,25 +4,25 @@ body{
 
  /* nav */
 .naviagtion-bar{
-    background-color: #f4f6f8;
+    /* background-color: #f4f6f8; */
+    background-color: #3a3973;
 }
 
 .navbar-light .navbar-brand {
-    color: rgba(0,0,0,.9);
-    font-weight: 600;
     line-height: 40px;
-}
-.navbar-light .navbar-nav .nav-link {
-    color: rgba(0,0,0,.55);
-    FONT-WEIGHT: 700;
+    color: rgba(255, 255, 255, 0.7) !important;
 }
 .nav-link .navbar-nav .nav-link a{
     transition: 0.5s ease;
 }
 
 a.nav-link{
-    border-bottom: 2px solid #f4f6f8;
+    border-bottom: 2px solid #3a3973;
+    color: rgba(255, 255, 255, 0.7) !important;
+    FONT-WEIGHT: 600;
+    line-height: 40px;
 }
 a.nav-link:hover{
-    border-bottom: 2px solid #f6e05e;
+    border-bottom: 2px solid white;
+    color: white !important;
 }
