@@ -51,30 +51,47 @@ function CheckOnblurPass(){
 }
 
 
-// check button
-// declare Correct Account and Pass
+function CheckOnblurConfirmPass(){
+    var Node=document.getElementById('myForm');
+    var errorPassword=document.getElementById('errorPassword1');
+    var password=document.getElementById('password').value;
+    var confirmpassword=document.getElementById('confirmpassword').value;
+    // console.log(Node)
+    // console.log(errorPassword)
+    console.log(password)
+    console.log(confirmpassword)
 
+    if(confirmpassword==''||confirmpassword==null){
+        errorPassword.style.color='red';
+        Node.classList.add('invalidConfirmPass');
+        Node.classList.remove('validConfirmPass');
+    }else if(confirmpassword!=password){
+        errorPassword.innerHTML='Mật khẩu không khớp!';
+        errorPassword.classList.add("invalidConfirmPass");
+        Node.classList.remove('validConfirmPass');
+        errorPassword.style.color='red';
+    }else{
+        errorPassword.innerHTML='';
+        errorPassword.classList.remove("invalidConfirmPass");
+        Node.classList.add('validConfirmPass');
+    }
+}
+
+
+// check null 
 function CheckAP(){
-    var CorrectAccount='group4tlu';
-    var CorrectPass='group4tlu';
     var input=document.getElementsByTagName('input');
-    // console.log(input)
+    console.log(input)
 
     var input0=input[0].value;
     var input1=input[1].value;
-    // console.log(input0);
-    // console.log(input1);
+    var input2=input[2].value;
 
-
-    // thay đổi thuộc tính nếu nó đúng
-    if(input0==''||input1==''){
-        alert('Bạn phải nhập đầy đủ tài khoản hoặc mật khẩu!');
-    }else if(input0==CorrectAccount&&input1!=CorrectPass){
-        alert('Tài khoản hoặc mật khẩu không chính xác!')
-    }else if(input0!=CorrectAccount&&input1==CorrectPass){
-        alert('Tài khoản hoặc mật khẩu không chính xác!')
+    if(input0==''||input1==''||input2==''){
+        alert('Hãy nhập đầy đủ thông tin');
     }else{
-        alert('Đăng Nhập Thành Công.');
-        document.getElementById('transfer').href='/Admin/pages/HomePageAdmin.html';
+        alert('Tài khoản của bạn đã đăng ký thành công!');
     }
+
 }
+

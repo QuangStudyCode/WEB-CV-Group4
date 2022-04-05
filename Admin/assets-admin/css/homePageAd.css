@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+}
+*{
+    box-sizing: border-box;
+}
+
+.navbar-brand{
+    font-size: 40px !important;
+    font-weight: 700;
+   
+}
+.navbar{
+    width: 300px;
+    height: 100vh;
+    background-color: #4285F4;
+    transition: 0.4s;
+    margin-left: -300px;
+    position: fixed !important;
+}
+
+.nav-link{
+    font-size: 19px;
+    padding-left: 35px !important;
+}
+
+.nav-link:hover{
+    transition: 0,4s ;
+    background-color: rgb(196, 113, 196);
+}
+.dropdown-item{
+    transition: 0.4s;
+}
+
+/* css for section to-left*/
+.to-left{
+    margin-left: 300px;
+}
+/* css for slider nav to-left */
+.to-left1{
+    margin-left: 0;
+}
