@@ -48,7 +48,7 @@
             <div class="row">
                 <!-- begin content-login-box -->
                 <div class="content-login-box  shadow">
-                    <h1>Login Admin</h1>
+                    <h1>Registration</h1>
                     <form action="" id="myForm">
 
                         <!-- begin input-box0 -->
@@ -66,21 +66,27 @@
                         <div class="input-box1 input-box-sub mt-3">
                             <label for="password">
                                 <i class="fa-solid fa-lock"></i>
-                                Mật Khẩu: <i id="errorPassword" style="font-weight: 500;">(*)</i><br>
+                                Mật Khẩu: <i id="errorPassword" style="font-weight: 500;color: rgb(197, 189, 189);">(*)</i><br>
                             </label>
                             <input type="password" id="password" class="contact-input w-100" placeholder="Nhập Mật khẩu của bạn" onblur="CheckOnblurPass()">
                         </div>
                         <!-- end input-box1 -->
 
+                          <!-- begin input-box2 -->
+                          <div class="input-box2 input-box-sub mt-3">
+                            <label for="password">
+                                <i class="fa-solid fa-lock"></i>
+                               Nhập Lại Mật Khẩu: <i id="errorPassword1" style="font-weight: 500;">(*)</i><br>
+                            </label>
+                            <input type="password" id="confirmpassword" class="contact-input w-100" placeholder="Nhập lại Mật khẩu của bạn" onblur="CheckOnblurConfirmPass()">
+                        </div>
+                        <!-- end input-box2 -->
 
-                        <label for="checkbox" class="checkbox"> <input type="checkbox"><i>Remember</i></label>
+
 
                         <!-- begin Button-login 'Ap=account and pass'-->
                         <div class="d-flex justify-content-center mt-3">
-                            <!-- sign in -->
-                            <button id="Button-login" class="m-2" onclick="CheckAP()"><a href="#" id="transfer">Đăng Nhập</a></button>
-                            <!-- sign up -->
-                            <button id="Button-login-sub"  class="m-2"><a href="/Admin/registration.html">Đăng ký</a></button>
+                            <button id="Button-login"  class="m-2" onclick="CheckAP()"><a>Đăng ký</a></button>
                            
                         </div>
                         <!-- end Button-login -->
@@ -92,19 +98,19 @@
                             <!-- login-box1 -->
                             <div class="login-box1 text-center">
                                 <i class="fa-brands fa-facebook"></i>
-                                Đăng Nhập với Facebook
+                                Đăng Ký với Facebook
                             </div>
                              <!-- login-box2 -->
                             <div class="login-box2 text-center">
                                 <i class="fa-brands fa-google"></i>
-                                Đăng Nhập với Google
+                                Đăng Ký với Google
                             </div>
                         </div>
                         <!-- end-loginBox -->
 
 
                         <!-- forgot pass -->
-                        <a href="/Admin/recover-acount.html" class="forgetPass mt-5">Quên mật khẩu?</a>
+                        <a href="/Admin/login.html" class="forgetPass mt-5">Quay lại Đăng Nhập?</a>
                         
                     </form>
 
@@ -121,8 +127,8 @@
 
 
 
-    <!-- link js validation -->
-    <script src="/Admin/assets-admin/js/validation-login.js"></script>
+    <!-- link js regitration  -->
+    <script src="/Admin/assets-admin/js/registration-account.js"></script>
     <!-- link bootsrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
