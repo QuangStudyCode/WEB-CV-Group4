@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- link css -->
+    <!-- css navv -->
     <link rel="stylesheet" href="/Admin/assets-admin/css/homePageAd.css">
+    <link rel="stylesheet" href="/Admin/assets-admin/css/editAccount-infor.css">
    
 
 
@@ -17,7 +19,7 @@
     <!-- link icons -->
     <link rel="stylesheet" href="/assets/icons/fontawesome-free-6.1.0-web/fontawesome-free-6.1.0-web/css/all.min.css">
 
-    <title>Home Admin</title>
+    <title>Edit Account Information</title>
 </head>
 <body>
     <!-- begin Sidebar Navigation   -->
@@ -28,22 +30,22 @@
     <ul class="navbar-nav d-flex flex-column mt-5 w-100">
       <!-- 1 -->
       <li class="nav-item w-100">
-        <a href="#" class="nav-link text-light"><i class="fa-solid fa-user"></i> Hồ Sơ</a>
+        <a href="/Admin/pages/HomePageAdmin.html" class="nav-link text-light"><i class="fa-solid fa-user"></i> Hồ Sơ</a>
       </li>
       <!-- 2 -->
       <li class="nav-item w-100">
         <a href="/Admin/pages/ListOfMembers.html" class="nav-link text-light"> <i class="fa-solid fa-list"></i> Danh sách thành viên</a>
       </li>
-     <!-- 3 -->
-     <li class="nav-item w-100">
-      <a class="nav-link text-light" href="#"><i class="fa-solid fa-wrench"></i> Chỉnh sửa danh sách</a>
-    </li>
+      <!-- 3 -->
+      <li class="nav-item w-100">
+        <a class="nav-link text-light" href="/Admin/pages/editAccountGuest.html"><i class="fa-solid fa-wrench"></i> Chỉnh sửa danh sách</a>
+      </li>
       <!-- 4 -->
       <li class="nav-item w-100 dropdown">
         <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"><i class="fa-solid fa-gears"></i>Tài Khoản </a>
         <ul class="dropdown-menu">
           <li>
-            <a href="/Admin/pages/editAccountIF.html" class="dropdown-item">Sửa thông tin tài khoản </a>
+            <a href="#" class="dropdown-item">Sửa thông tin tài khoản </a>
           </li>
           <li>
             <a href="/Admin/pages/editAccountAP.html" class="dropdown-item">Đổi mật khẩu </a>
@@ -64,53 +66,61 @@
     <div class="content-section">
     
 
-      <!-- table data admin-->
-      <table  class="table table-striped">
-        <section>Thông Tin Admin</section>
-        <thead>
-         <tr>
-           <th>#</th>
-          <th>Họ Tên</th>
-          <th>Tuổi</th>
-          <th>Địa chỉ Email</th>
-          <th>Số Điện Thoại</th>
-          <th>Địa chỉ</th>
-          <th>Vị trí</th>
-         </tr>
-        </thead>
+      <h1 class="text-center">Chỉnh sửa thông tin tài khoản</h1>
+    <div class="myAccount d-grid justify-content-center align-items-center">
+        <div class="countainer">
+       
+            <form action="" id="myForm" class="shadow rounded-3 pt-3 px-3">
 
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Nguyễn Bá Quang</td>
-            <td>20</td>
-            <td>baquang0411@gmail.com</td>
-            <td>0886113989</td>
-            <td>Hà Nam</td>
-            <td>Người Quản lý</td>
-          </tr>
-          <tr>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-          </tr>
-          <tr>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-            <td>...</td>
-          </tr>
-        </tbody>
-        
-      </table>
+                <div class="input-box1">
+                    <label for="name">
+                        Họ:
+                        <input type="text" placeholder="Nhập Họ.." required>
+                    </label>
+                </div>
+                <div class="input-box1">
+                    <label for="name">
+                        Tên:
+                        <input type="text" placeholder="Nhập Tên.." required>
+                    </label>
+                    <br>
+                </div>
+                <div class="input-box1">
+                  <label for="name">
+                      Tuổi:
+                      <input type="number" placeholder="Nhập Tuổi.." required>
+                  </label>
+                  <br>
+              </div>
+                <div class="input-box1">
+                    <label for="name">
+                        Địa Chỉ:
+                        <input type="text" placeholder="Nhập địa chỉ.." required>
+                    </label>
+                    <br>
+                </div>
+                <div class="input-box1">
+                    <label for="email">
+                        Email:
+                        <input type="email" placeholder="Nhập Email.." required autocomplete="off">
+                    </label>
+                    <br>
+                </div>
+                <div class="input-box1">
+                    <label for="name">
+                       Số Điện Thoại:
+                        <input type="number" placeholder="Nhập số điện thoại.." required>
+                    </label>
+                    <br>
+                </div>
 
+                <div class="text-center py-3">
+                    <button class="btn btn-success ">Cập Nhập</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
 
     </div>
    </div>
