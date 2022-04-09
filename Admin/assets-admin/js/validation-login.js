@@ -52,29 +52,36 @@ function CheckOnblurPass(){
 
 
 // check button
-// declare Correct Account and Pass
+// declare Correct Account and Pass (AP)
 
 function CheckAP(){
-    var CorrectAccount='group4tlu';
-    var CorrectPass='group4tlu';
+    var adminAccount='group4tlu';
+    var adminPass='group4tlu';
+
+    var guestAcount='guest1234';
+    var guestPass='guest1234';
+    
     var input=document.getElementsByTagName('input');
-    // console.log(input)
+    console.log(input)
 
     var input0=input[0].value;
     var input1=input[1].value;
-    // console.log(input0);
-    // console.log(input1);
+    console.log(input0);
+    console.log(input1);
 
 
     // thay đổi thuộc tính nếu nó đúng
     if(input0==''||input1==''){
         alert('Bạn phải nhập đầy đủ tài khoản hoặc mật khẩu!');
-    }else if(input0==CorrectAccount&&input1!=CorrectPass){
+    }else if(input0==adminAccount&&input1!=adminPass){
         alert('Tài khoản hoặc mật khẩu không chính xác!')
-    }else if(input0!=CorrectAccount&&input1==CorrectPass){
+    }else if(input0!=adminAccount&&input1==adminPass){
         alert('Tài khoản hoặc mật khẩu không chính xác!')
-    }else{
+    }else if(input0==adminAccount&&input1==adminPass){
         alert('Đăng Nhập Thành Công.');
         document.getElementById('transfer').href='/Admin/pages/HomePageAdmin.html';
+    }else if(input0==guestAcount&&input1==guestPass){
+        alert('Đăng Nhập Thành Công.');
+        document.getElementById('transfer').href='/Admin/pages/guestPage.html';
     }
 }

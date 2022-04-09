@@ -5,6 +5,9 @@ body{
     box-sizing: border-box;
 }
 
+nav#slidebar {
+    height: 100%;
+}
 .navbar-brand{
     font-size: 40px !important;
     font-weight: 700;
@@ -28,6 +31,10 @@ body{
     transition: 0,4s ;
     background-color: rgb(196, 113, 196);
 }
+
+.dropdown-menu{
+   width: 100%;
+}
 .dropdown-item{
     transition: 0.4s;
 }
@@ -39,4 +46,25 @@ body{
 /* css for slider nav to-left */
 .to-left1{
     margin-left: 0;
+}
+
+
+
+#section{
+    transition: 0.4s;
+}
+
+#button{
+    margin: 30px;
+}
+
+
+/* for table data */
+
+section{
+    text-align: center;
+    font-size: 30px;
+    background-color: #97aed3;
+    font-weight: 600;
+    color: white;
 }
