@@ -29,8 +29,8 @@ html{
     margin-top: 10px;
     background-color: white;
     border-radius: 5px;
-    width: 500px !important;
     border-right: 16px solid var(--color-blue);
+    width: 400px !important;
 }
 
 
@@ -206,7 +206,7 @@ html{
 .login-arow::before{
     border-top: 1px solid #b7b7b7;
     content: "";
-    left: 310px;
+    left: 230px;
     position: absolute;
     right: 0;
     top: 50%;
@@ -216,7 +216,7 @@ html{
     content: "";
     left: 0;
     position: absolute;
-    right:310px;
+    right:230px;
     top: 50%;
 }
 

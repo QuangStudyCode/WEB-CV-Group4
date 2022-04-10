@@ -82,6 +82,6 @@ function CheckAP(){
         document.getElementById('transfer').href='/Admin/pages/HomePageAdmin.html';
     }else if(input0==guestAcount&&input1==guestPass){
         alert('Đăng Nhập Thành Công.');
-        document.getElementById('transfer').href='/Admin/pages/guestPage.html';
+        document.getElementById('transfer').href='/Admin/pages/Guest-Pages/guestPage.html';
     }
 }
