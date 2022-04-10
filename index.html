@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/navigation.css">
 
+
+    <link rel="stylesheet" href="/List-Members/member1-NBQ/assets-member1/css/member1-contact.css">
+
     <!-- link bootsrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -39,10 +42,10 @@
               <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                   <li class="nav-item me-2">
-                    <a class="nav-link" href="#"> <i class="fa-solid fa-phone"></i> Liên Hệ</a>
+                    <a class="nav-link" href="#contact"> <i class="fa-solid fa-phone"></i> Liên Hệ</a>
                   </li>    
                   <li class="nav-item ms-2">
-                    <a class="nav-link" href="/Admin/login.html"> <i class="fa-solid fa-user"></i> Admin</a>
+                    <a class="nav-link" href="/Admin/login.html"> <i class="fa-solid fa-user"></i> Đăng Nhập</a>
                   </li> 
                 </ul>
               </div>
@@ -123,6 +126,87 @@
         </div>
         <!-- end content-listmember -->
 
+        <!-- begin contact -->
+        <div id="contact" class="my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="title">
+                        <h3 class="text-center" >Liên Hệ</h3>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1730.1819448427286!2d106.02454700907339!3d20.489828352215024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135db04583111a9%3A0xf92a017811b49c7a!2zTmjDoCB0aOG7nSBHacOhbyB44bupIEFuIFThuq1w!5e0!3m2!1svi!2s!4v1648617524279!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="map mb-5"></iframe>
+                    <!-- col left -->
+                    <div class="col-lg-6 rounded-3 shadow py-5" style="background-color: var( --color-bg-gray);">
+                        <!-- 1 -->
+                        <form id="Myform">
+                            <div class="input-box">
+                                <label for="name">
+                                    Name: <i id="errorName" style="font-weight: 500;">(*)</i>
+                                </label>
+                                <input type="text" id="name" class="contact-input" placeholder="Nhập tên của bạn"
+                                    onblur="CheckOnblurName()">
+                            </div>
+        
+                            <!-- 2 -->
+                            <div class="input-box1">
+                                <label for="email" class="mt-4">
+                                    Email:<i id="errorEmail" style="font-weight: 500;">(*)</i>
+                                </label>
+                                <input type="text" id="email" class="contact-input " placeholder="Nhập địa chỉ Email của bạn"
+                                    onblur="CheckOnblurEmail()">
+                            </div>
+        
+                            <!--  -->
+                            <div class="mt-5">
+                                <label for="name">
+                                    Message:<i id="errorMess">(*)</i>
+                                </label>
+                                <div class="box-message">
+                                    <input type="text" id="mess" class="contact-message contact-input"
+                                        placeholder="Hãy nhập tin nhắn của bạn" row="7" onblur="CheckOnblurMess()">
+                                </div>
+        
+                            </div>
+        
+                            <button type="reset" id="buttonForm" onclick="Reload()" class="btn-contact mt-5 px-3 rounded-pill">
+                                Gửi</button>
+        
+                        </form>
+                    </div>
+                    <!-- col right -->
+                    <div class="col-lg-6 mt-5 contact-col-right">
+                        <h3 class="text-center ">Liên Lạc</h3>
+                        <a style="margin-left:100px">Hãy liên hệ với tôi nếu bạn có bất cứ vấn đề nào!</a>
+        
+                        <div class="ms-5  mt-2">
+                            <i class="fa-solid fa-phone"></i> <a>+886113989</a>
+                        </div>
+                        <div class="ms-5  mt-2">
+                            <i class="fa-solid fa-envelope"></i> <a> baquang0411@gmail.com</a>
+                        </div>
+        
+                        <div class="ms-5  mt-2">
+                            <i class="fa-brands fa-github"></i><a> QuangStudyCode</a>
+                        </div>
+        
+                        <div class="ms-5 mt-2">
+                            <i class="fa-brands fa-facebook"></i><a> quang.ba.3133</a>
+                        </div>
+        
+                        <div class="ms-5 mt-2">
+                            <i class="fa-brands fa-instagram"></i>
+                            <a> quangzz.z</a>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end contact -->
+
+
        <!-- begin footer -->
     <div class="footer d-grid justify-content-center align-items-center shadow">
         <div class="container">
@@ -154,6 +238,8 @@
     <!-- link js -->
     <script src="/assets/js/script.js"></script>
 
+    <!-- link js validate form -->
+    <script src="/List-Members/member1-NBQ/assets-member1/js/validate-form.js"></script>
     <!-- link bootsrap5 -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
