@@ -55,8 +55,8 @@ function CheckOnblurPass(){
 // declare Correct Account and Pass (AP)
 
 function CheckAP(){
-    var adminAccount='group4tlu';
-    var adminPass='group4tlu';
+    var adminAccount='admin1234';
+    var adminPass='admin1234';
 
     var guestAcount='guest1234';
     var guestPass='guest1234';
@@ -83,5 +83,7 @@ function CheckAP(){
     }else if(input0==guestAcount&&input1==guestPass){
         alert('Đăng Nhập Thành Công.');
         document.getElementById('transfer').href='/Admin/pages/Guest-Pages/guestPage.html';
+    }else{
+        alert('tài khoản hoặc mật khẩu không chính xác.')
     }
 }
